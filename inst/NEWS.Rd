@@ -1,5 +1,26 @@
 \name{NEWS}
 \title{NEWS file for the \pkg{Uniquorn} bioconductor package }
+\section{Changes in version 1.0.3 [2016-05-18]}{
+    \subsection{Changes to treshold calculation}{
+        \itemize{
+            \item Fixed error in threshold calculation
+        }
+    }
+}
+\section{Changes in version 1.0.1 [2016-05-09]}{
+    \subsection{Minor update of BED files}{
+        \itemize{
+            \item Extended length of BED file mutations shown in the IGV
+        }
+    }
+}
+\section{Changes in version 0.99.16 [2016-05-04]}{
+    \subsection{Further minor update of statistics module}{
+        \itemize{
+            \item Further minor fixes to statistics
+        }
+    }
+}
 \section{Changes in version 0.99.15 [2016-05-03]}{
     \subsection{Minor Update of statistics}{
         \itemize{
