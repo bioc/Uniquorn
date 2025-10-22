@@ -12,13 +12,13 @@ write_mutation_grange_objects = function(
         package_path,"/Libraries/",
         ref_gen,"/",library_name,
         "/W",as.character(mutational_weight_inclusion_threshold),
-        "_Uniquorn_DB.RData"),
+        "_Uniquorn_DB.rds"),
         sep ="", collapse= ""
     )
     
     if ( type != ""){
-        rdata_path = str_replace(rdata_path, pattern = "_Uniquorn_DB.RData",
-            paste( c( ".",type,"_Uniquorn_DB.RData"), sep = "",collapse = "" )
+        rdata_path = str_replace(rdata_path, pattern = "_Uniquorn_DB.rds",
+            paste( c( ".",type,"_Uniquorn_DB.rds"), sep = "",collapse = "" )
         )
     }
     
@@ -65,7 +65,7 @@ read_mutation_grange_objects = function(
         package_path,"/Libraries/",
         ref_gen,"/",library_name,
         "/W",as.character(mutational_weight_inclusion_threshold),
-        "_Uniquorn_DB.RData"),
+        "_Uniquorn_DB.rds"),
         sep = "",
         collapse = ""
     )

@@ -73,7 +73,7 @@ remove_ccls_from_database = function(
     
     if( test_mode == FALSE ){
       stats_path = paste( c( library_path,"/",library_name,
-                             "/CCL_List_Uniquorn_DB.RData"), sep ="", collapse= "")
+                             "/CCL_List_Uniquorn_DB.rds"), sep ="", collapse= "")
       g_library = readRDS(stats_path)
       g_library = data.frame(g_library, stringsAsFactors = FALSE)
       g_library = g_library[ g_library$CCL!= "",]

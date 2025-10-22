@@ -44,7 +44,7 @@ show_contained_ccls = function(
     for (library_name in libraries){
         
         stats_path = paste( c( library_path,"/",library_name,
-            "/CCL_List_Uniquorn_DB.RData"), sep ="", collapse= "")
+            "/CCL_List_Uniquorn_DB.rds"), sep ="", collapse= "")
         g_library = readRDS(stats_path)
         cl_id_no_library = str_replace_all( g_library$CCL, pattern = 
             paste("_", library_name, sep = ""), "" )

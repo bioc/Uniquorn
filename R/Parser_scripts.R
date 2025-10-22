@@ -144,7 +144,7 @@ write_w0_and_split_w0_into_lower_weights = function(
     CCL_stats_data_path =  paste( c(
         package_path,"/Libraries/",
         ref_gen,"/",library_name,
-        "/CCL_List_Uniquorn_DB.RData"),
+        "/CCL_List_Uniquorn_DB.rds"),
         sep ="", collapse= ""
     )
     saveRDS(ccl_stats,CCL_stats_data_path)
